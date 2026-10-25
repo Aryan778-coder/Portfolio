@@ -1,6 +1,7 @@
 import FadeIn from '../components/FadeIn'
 import ContactButton from '../components/ContactButton'
 import Magnet from '../components/Magnet'
+import Navbar from '../components/Navbar'
 
 export default function HeroSection() {
   return (
@@ -11,44 +12,7 @@ export default function HeroSection() {
     >
       {/* Navbar */}
       <FadeIn delay={0} y={-20}>
-        <nav className="flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8 relative z-30">
-          <a
-            href="#about"
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] transition-opacity duration-200 hover:opacity-70"
-          >
-            About
-          </a>
-          <a
-            href="#skills"
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] transition-opacity duration-200 hover:opacity-70"
-          >
-            Skills
-          </a>
-          <a
-            href="#projects"
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] transition-opacity duration-200 hover:opacity-70"
-          >
-            Projects
-          </a>
-          <a
-            href="#casestudy"
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] transition-opacity duration-200 hover:opacity-70"
-          >
-            Case Study
-          </a>
-          <a
-            href="#experience"
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] transition-opacity duration-200 hover:opacity-70"
-          >
-            Experience
-          </a>
-          <a
-            href="#contact"
-            className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] transition-opacity duration-200 hover:opacity-70"
-          >
-            Contact
-          </a>
-        </nav>
+        <Navbar />
       </FadeIn>
 
       {/* Hero heading */}
